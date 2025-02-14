@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab4 - Exercise 1</title>
+    </head>
+    <body>
+        <h1> JavaScript Lab</h1>
+        <script>
+            let x = 5;
+            const y = 10;
+            let z = 15;
+            
+            x = 25;
+          /* y = 3*/
+
+          let string1 = "Hello, World!";
+          let string2 = "Javascript is fun!";
+
+          console.log(string1.length);
+
+          console.log(string1 + string2);
+
+          console.log(string2.replace("fun" , "awesome"));
+
+          let name = "Alice";
+          let age = 25;
+
+          let example = `My name is ${name} and I am ${age} years old`;
+          console.log(example);
+
+          let currentDate = new Date();
+          console.log(currentDate);
+          console.log(currentDate.getFullYear())
+          console.log(currentDate.getMonth()+1)
+          console.log(currentDate.getDay())
+        
+          const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+          let dayOfWeek = weekdays[currentDate.getDay()];
+
+          console.log(dayOfWeek)
+        </script>
+
+    </body>
+</html>
