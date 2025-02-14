@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab4 – Exercise 1</title>
+</head>
+<body>
+    <h1>JavaScript Lab</h1>
+    <script>
+        /*
+        function adder(x,y) {
+            return x + y;
+        }
+        */
+
+        /*
+        function subtracter(x,y) {
+            return x - y;
+        }
+        */
+
+        function adder(x,y = 7) {
+            return x + y;
+        }
+
+        function subtracter(x,y = 7) {
+            return x - y;
+        }
+
+        let multiplier = (x,y) => x * y; 
+
+        let divider = (x,y) => {
+            if (y == 0) {
+                return "Error: Division by zero";
+            }
+            return x / y;
+        }
+        
+        function calculator(x, y, callback) {
+            return callback(x, y);
+        }
+        
+        console.log(calculator(5, 3, adder));
+        console.log(calculator(5, 3, multiplier));
+       
+
+        console.log(adder(5));
+        console.log(subtracter(5));
+        console.log(multiplier(15, 3));
+        console.log(divider(15, 3));
+        console.log(divider(15, 0));
+    </script>
+</body>
+</html>
